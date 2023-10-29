@@ -2,6 +2,8 @@
 
 
 
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,8 +26,9 @@
     <form method="post" action="genera_password.php">
         <label for="lunghezza">Lunghezza password:</label>
         <input type="number" id="lunghezza" name="lunghezza" min="8" max="32" required>
-        <button type="submit">Genera Password Casuale</button>
+        <button  @click='generaPasswordCasuale()' type="submit">Genera Password Casuale</button>
     </form>
+
     </div>
 
   </div>
