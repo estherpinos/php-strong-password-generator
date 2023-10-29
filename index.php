@@ -1,9 +1,5 @@
 
 
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,10 +19,10 @@
     <h4 class=" text-white ">Genera una password sicura</h4>
     <p>Scegliere una password con un minimo di 8 caratteri e un massimo di 32 caratteri</p>
     <div>
-    <form method="post" action="genera_password.php">
+    <form method="POST" action="functions.php">
         <label for="lunghezza">Lunghezza password:</label>
         <input type="number" id="lunghezza" name="lunghezza" min="8" max="32" required>
-        <button  @click='generaPasswordCasuale()' type="submit">Genera Password Casuale</button>
+        <button  @click='generaPasswordCasuale()'>Genera Password Casuale</button>
     </form>
 
     </div>
