@@ -1,4 +1,11 @@
 
+<?php 
+
+$min=8;
+$max= 32;
+
+?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -26,7 +33,7 @@
 
         <div class="row">
           <div class="col-9">
-            <p>Lunghezza password:</p>
+            <p class=" text-start ">Lunghezza password:</p>
           </div>
           <div class="col">
             <input type="number" id="lunghezza" name="lunghezza" min="8" max="32" required>
@@ -34,7 +41,10 @@
         </div>
         
         <div class="row">
-          <button  @click='generaPasswordCasuale()'>Genera Password Casuale</button>
+
+        <div class="col-auto"><button class="btn btn-primary" type="submit"  @click='generaPasswordCasuale()'>Invia</button></div>
+        <div class="col-auto"><button class="btn btn-secondary" type="reset" >Reset</button></div>
+          
         </div>
             
       </form>
