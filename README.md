@@ -1,1 +1,0 @@
-# php-strong-password-generator
