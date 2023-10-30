@@ -4,6 +4,15 @@
 $min=8;
 $max= 32;
 
+
+if (isset($_POST["pswlen"]) && !empty($_POST['pswlen'])) {
+
+  $pswlen = $_POST['pswlen'];
+
+  if ($pswlen < $min || $pswlen> $max) {
+    $message= 'Errore!'
+  }  # code...
+}
 ?>
 
 
