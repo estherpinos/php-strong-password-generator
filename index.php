@@ -17,13 +17,27 @@
   <div class="contents text-center ">
     <h2 class=" text-muted">Strong password Generator</h2>
     <h4 class=" text-white ">Genera una password sicura</h4>
-    <p>Scegliere una password con un minimo di 8 caratteri e un massimo di 32 caratteri</p>
-    <div>
-    <form method="POST" action="functions.php">
-        <label for="lunghezza">Lunghezza password:</label>
-        <input type="number" id="lunghezza" name="lunghezza" min="8" max="32" required>
-        <button  @click='generaPasswordCasuale()'>Genera Password Casuale</button>
-    </form>
+    <div class="alert alert-success" role="alert">
+      Scegliere una password con al meno 8 caratteri e massimo 32 caratteri.
+    </div>
+     
+    <div class="genera-pw bg-white p-3 rounded-1 ">
+      <form method="POST" action="index.php">
+
+        <div class="row">
+          <div class="col-9">
+            <p>Lunghezza password:</p>
+          </div>
+          <div class="col">
+            <input type="number" id="lunghezza" name="lunghezza" min="8" max="32" required>
+          </div>
+        </div>
+        
+        <div class="row">
+          <button  @click='generaPasswordCasuale()'>Genera Password Casuale</button>
+        </div>
+            
+      </form>
 
     </div>
 
