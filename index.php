@@ -25,7 +25,7 @@ $max= 32;
     <h2 class=" text-muted">Strong password Generator</h2>
     <h4 class=" text-white ">Genera una password sicura</h4>
     <div class="alert alert-success" role="alert">
-      Scegliere una password con al meno 8 caratteri e massimo 32 caratteri.
+      Scegliere una password con al meno <?php echo $min ?> caratteri e massimo <?php echo $max ?> caratteri.
     </div>
      
     <div class="genera-pw bg-white p-3 rounded-1 ">
