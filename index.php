@@ -1,7 +1,7 @@
 
 <?php 
 
-include __DIR__ ."partials/functions.php";
+include __DIR__ ."./functions.php";
 
 $min=8;
 $max= 32;

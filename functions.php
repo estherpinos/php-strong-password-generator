@@ -7,10 +7,11 @@ function generaPasswordCasuale($lunghezza) {
   
   for ($i = 0; $i < $lunghezza; $i++) {
       $index = rand(0, strlen($caratteri) - 1);
-      $password = $caratteri[$index];
+      $password .= $caratteri[$index];
   }
   
   return $password;
+
 }
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
